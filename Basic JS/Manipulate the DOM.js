@@ -18,3 +18,11 @@ alert(b3);
 var age = prompt("what's your age?");
 
 document.getElementById('someText').innerHTML = age;
+
+// finding segmennts in string
+
+var name = 'fashad ahmed';
+
+console.log(name.indexOf('f'));
+// returns index
+// also consider space in string as index value
