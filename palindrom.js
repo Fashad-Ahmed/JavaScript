@@ -1,5 +1,5 @@
 
-var word = propmt("Enter your name: ");
+var word = prompt("Enter your name: ");
 var c = "";
 
 for (var i = word.length - 1; i >= 0 ;i--){
@@ -7,5 +7,5 @@ for (var i = word.length - 1; i >= 0 ;i--){
 }
 
 if (word === check){
-    alert(word + "is a plaendrome")
+    alert(word + "is a plaendrome");
 }
