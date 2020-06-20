@@ -8,7 +8,7 @@ var s$ = sChar.toLowerCase();
 
 var cityChange = f$ + s$;
 
-var cities = ['Karachi','Islamabad','Peshawar',Lahore,Quetta]
+var cities = ['Karachi','Islamabad','Peshawar','Lahore','Quetta']
 
 for(i=0;i<cities.length;i++){
     if(cities[i] === cityChange){
