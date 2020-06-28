@@ -8,7 +8,8 @@ fun( );
 
 
 function square(num) {
-    return num**3
+    var n =  num**3;
+    return n;
 }
 
 
