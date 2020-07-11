@@ -4,7 +4,7 @@ var cityChange = city.toLowerCase ;
 var cities = ['karachi','islamabad','peshawar',lahore]
 
 for(i=0;i<cities.length;i++){
-    if(cityChange[i] === cities){
+    if(cities[i] === cityChange){
     alert('city tracked');
     }
     else{
