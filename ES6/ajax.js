@@ -34,3 +34,43 @@ const buttonClick = () => {
     xhr.send();
 }
 fetchBtn.addEventListener('click',buttonClick);
+
+
+let popBtn = document.getElementById('popBtn');
+popBtn.addEventListener('click',popHnadler);
+
+function popHnadler() {
+
+    console.log('pop btn clicked!')
+    // instantiation of xhr object
+    const xhr = new XMLHttpRequest();
+
+    // open object
+    xhr.open('GET','http://dummy.restapiexample.com/api/v1/employees',true); 
+    
+
+    
+    // response is ready
+    xhr.onload = function () {
+        if (this.status === 200) {   
+        let obj = JSON.parse(this.responseText);
+        console.log(obj);
+        let list = document.getElementById('list');
+        str = "";
+        for (key in obj) {
+            str += `<li> ${obj[key].employee_name} </li>`;
+        }
+        list.innerHTML = str;
+    }
+    else {
+        console.log('some error occured');
+    }
+    
+    
+    }
+
+    console.log();
+
+    // send the request
+    xhr.send();
+}
